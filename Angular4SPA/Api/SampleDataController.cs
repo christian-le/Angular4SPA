@@ -19,7 +19,7 @@ namespace A2SPA.Api
         [HttpGet]
         public TestData Get()
         {
-            // pick up the last value, so we see something happening
+            // pick up the last value
             return _context.TestData.DefaultIfEmpty(null as TestData).LastOrDefault();
         }
 
