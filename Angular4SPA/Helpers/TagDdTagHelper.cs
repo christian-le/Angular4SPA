@@ -56,7 +56,6 @@ namespace Angular4SPA.Helpers
 
             output.Content.AppendHtml(labelTag);
             output.Content.AppendHtml(pTag);
-        }
-        
+        }       
     }
 }

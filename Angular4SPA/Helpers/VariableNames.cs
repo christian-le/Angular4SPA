@@ -11,7 +11,6 @@ namespace Angular4SPA.Helpers
             var propertyName = modelExpression.Name;
 
             return className.Camelize() + "." + propertyName.Camelize();
-        }
-        
+        }        
     }
 }
