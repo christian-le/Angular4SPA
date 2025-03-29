@@ -23,5 +23,3 @@ namespace Angular4SPA
         }
     }
 }
-
-//comment
