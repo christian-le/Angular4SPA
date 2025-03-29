@@ -21,5 +21,6 @@ namespace Angular4SPA
 
             host.Run();
         }
+        
     }
 }
