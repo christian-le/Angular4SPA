@@ -13,8 +13,11 @@ namespace Angular4SPA.Helpers
             return className.Camelize() + "." + propertyName.Camelize();
         }        
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> master
+=======
+>>>>>>> f41f4f5c6fb1aa95036f16b7f2463bb50b879114
     }
 }
