@@ -76,6 +76,7 @@ namespace Angular4SPA
             {
                 DbInitializer.Initialize(context);
             }
+            
         }
     }
 }
