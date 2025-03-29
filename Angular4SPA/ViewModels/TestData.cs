@@ -26,5 +26,7 @@ namespace Angular4SPA.ViewModels
         [Display(Description = "Password", Name = "Password")]
         public string Password { get; set; }
         
+        [Required]
+        public string Address { get; set; }
     }
 }
