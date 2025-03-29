@@ -12,5 +12,6 @@ namespace Angular4SPA.Helpers
 
             return className.Camelize() + "." + propertyName.Camelize();
         }        
+        
     }
 }
