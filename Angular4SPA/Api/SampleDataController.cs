@@ -23,15 +23,25 @@ namespace A2SPA.Api
             return _context.TestData.DefaultIfEmpty(null as TestData).LastOrDefault();
         }
 
+        /// <summary>
+        /// Adds a new TestData entry to the database after validating required fields.
+        /// </summary>
+        /// <param name="value">The TestData object to add, received from the request body.</param>
+        /// <returns>The newly created TestData entity.</returns>
         // POST api/values
         [HttpPost]
         public TestData Post([FromBody]TestData value)
         {
-            // it's valid isn't it? ToDO: add server-side validation here
+            // Server-side validation: check for null and required fields
+            if (value == null || string.IsNullOrWhiteSpace(value.SomeRequiredProperty))
+            {
+                throw new ArgumentException("Invalid data: required fields are missing.");
+            }
             value.Id = 0;
             var newTestData = _context.Add(value);
             _context.SaveChanges();
             return newTestData.Entity as TestData;
+            
         }
 
         // PUT api/values/5
